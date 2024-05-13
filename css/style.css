@@ -1,0 +1,274 @@
+/* Reset de margens e padding */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo de fundo com gradiente */
+body {
+  background: linear-gradient(to right, #000000, #17212e);
+}
+
+/* Estilo do cabeçalho */
+header {
+  position: sticky;
+  z-index: 1;
+  background-color: #171717ff;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+  padding: 1%;
+  box-shadow: 0px 2px 30px #171717ff;
+  transition: 0.5s;
+  top: 0;
+}
+
+/* Estilo do logo */
+.logo {
+  margin: 0 1%;
+}
+
+/* Estilo da navegação */
+.nav {
+  align-self: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  padding: 3%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  background-color: antiquewhite;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Estilo do login */
+#login {
+  width: 60%;
+  display: flex;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%;
+}
+
+.login a {
+  color: white;
+  padding: 5%;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login a:hover {
+  background-color: #212121ff;
+}
+
+/* Estilo do botão de menu */
+.menu-button {
+  background-color: transparent;
+  margin-right: 5px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: none;
+  position: sticky;
+  right: 20px;
+}
+
+.menu-button i {
+  color: white;
+  font-size: 200%;
+}
+
+.menu-button:active {
+  background-color: rgb(26, 26, 26);
+}
+
+/* Estilo da barra lateral */
+.sidebar {
+  z-index: 10;
+  width: 0%;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  right: 0;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.closesidebar i {
+  font-size: 75%;
+}
+
+.closesidebar,
+.closesidebar button {
+  width: 100%;
+}
+
+.closesidebar button {
+  padding: 2%;
+  background-color: transparent;
+  color: white;
+  appearance: none;
+  font-size: 300%;
+  border: transparent;
+}
+
+/* Estilo da navegação lateral */
+.navSideBar {
+  font-size: 150%;
+  width: 90%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 20% 0;
+}
+
+.navSideBar a {
+  padding: 5%;
+  text-align: start;
+  width: 80%;
+  color: white;
+  border-top: 1px solid white;
+}
+
+.navSideBar a:hover {
+  font-size: 120%;
+  font-weight: bolder;
+  transition: all 0.5s;
+}
+
+.navSideBar a:first-child {
+  border-top: none;
+}
+
+/* Estilo do login na barra lateral */
+.loginSideBar {
+  width: 90%;
+  font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+.loginSideBar a {
+  padding: 4%;
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.loginSideBar a:first-child {
+  margin-top: 5%;
+}
+
+/* Ocultar overflow em elementos */
+.navSideBar,
+.loginSideBar,
+.closeSideBar,
+.closeSideBar i {
+  overflow: hidden;
+}
+
+/* Remover sublinhado em links */
+.nav a,
+.navSideBar a {
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo principal */
+main {
+  color: whitesmoke;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Estilo de fontes*/
+footer,
+section {
+  font-family: "Playfair Display", "Roboto", "Lato", "Montserrat", "Oswald",
+    sans-serif;
+}
+/* Estilo de seção */
+section {
+  margin-bottom: 4%;
+  border-bottom: solid white;
+  padding: 0.8% 2%;
+  width: 80%;
+  height: 100vh;
+}
+
+section h2 {
+  text-decoration: underline;
+}
+
+/* Estilo da seção de início */
+#inicio {
+  position: relative;
+  padding: 0% 1%;
+  display: flex;
+  justify-content: center;
+}
+
+#inicio img {
+  margin-bottom: 0%;
+  padding: 1%;
+  align-self: flex-end;
+  width: auto;
+  height: 50vmax;
+  box-shadow: 15px #010b14;
+}
+
+#inicio p {
+  text-align: center;
+  position: absolute;
+  padding: 0% 4%;
+  bottom: 1%;
+}
+
+/* Estilo de sublinhado personalizado */
+span[sublinhado] {
+  text-decoration: underline;
+}
+
+/*Estilo do rodapé*/
+footer {
+  background-color: #171717ff;
+  box-shadow: 0px 2px 30px #171717ff;
+  color: #ffffff;
+  height: 200%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.link {
+  color: white;
+}

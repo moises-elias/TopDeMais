@@ -1,0 +1,49 @@
+/* Dispositivos com largura de tela de até 480 pixels */
+@media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+}
+
+/* Dispositivos com largura de tela entre 481 e 768 pixels */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+}
+
+/* Dispositivos com largura de tela entre 769 e 1024 pixels */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos para dispositivos com largura de tela entre 769 e 1024 pixels */
+}
+
+/* Dispositivos com largura de tela entre 1025 e 1440 pixels */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .headerClose {
+    top: -20%;
+  }
+  .logo {
+    width: 50%;
+  }
+
+  .navSideBar {
+    width: 40%;
+  }
+
+  .loginSideBar {
+    width: 40%;
+  }
+}
+
+/* Dispositivos com largura de tela superior a 1440 pixels */
+@media screen and (min-width: 1441px) {
+  /* Estilos para dispositivos com largura de tela superior a 1440 pixels */
+}
