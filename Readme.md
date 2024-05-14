@@ -22,4 +22,3 @@ Este é um projeto fictício desenvolvido para fins de aprendizado, e contribui�
 ## Licença
 
 Este projeto é licenciado sob a licença [MIT](https://opensource.org/licenses/MIT).
-
