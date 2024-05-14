@@ -1,18 +1,3 @@
-//Barra Lateral
-const sidebar = document.getElementById("sidebar");
-const navLogin = document.getElementById("login");
-
-function closeSideBar() {
-  sidebar.style.width = "0%";
-  navLogin.style.visibility = "visible";
-}
-
-function openSideBar() {
-  sidebar.style.width = "40%";
-  navLogin.style.visibility = "hidden";
-}
-
-
 //Cabeçalho interativo
 const header = document.querySelector("header"); //Cabeçalho
 const scrollSizeY = document.documentElement.scrollTop; //Seleciona o Tamanho Vertical do scroll
