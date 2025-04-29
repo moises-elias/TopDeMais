@@ -27,7 +27,7 @@
 /* Dispositivos com largura de tela entre 1025 e 1440 pixels */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .headerClose {
-    top: -20%;
+    top: -18%;
   }
 
   .logo {
