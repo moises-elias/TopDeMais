@@ -60,6 +60,8 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 5%;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .login a {
@@ -146,11 +148,15 @@ header {
 }
 
 .navSideBar a {
+  display: flex;
+  gap: 5%;
+  justify-content: start;
+  align-items: center;
   padding: 5%;
-  text-align: start;
   width: 80%;
   color: white;
   border-top: 1px solid white;
+  flex-wrap: nowrap
 }
 
 .navSideBar a:hover {
