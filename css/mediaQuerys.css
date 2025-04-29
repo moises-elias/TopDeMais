@@ -21,17 +21,17 @@
 }
 
 /* Dispositivos com largura de tela entre 769 e 1024 pixels */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Estilos para dispositivos com largura de tela entre 769 e 1024 pixels */
-}
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
 
 /* Dispositivos com largura de tela entre 1025 e 1440 pixels */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .headerClose {
     top: -20%;
   }
+
   .logo {
-    width: 50%;
+    width: 40%;
   }
 
   .navSideBar {
@@ -45,5 +45,18 @@
 
 /* Dispositivos com largura de tela superior a 1440 pixels */
 @media screen and (min-width: 1441px) {
+
   /* Estilos para dispositivos com largura de tela superior a 1440 pixels */
+  .headerClose {
+    top: -18%;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .login {
+    width: 20%;
+    font-size: 160%;
+  }
 }
