@@ -246,6 +246,7 @@ section h2 {
 }
 
 #inicio div {
+  align-self: flex-end;
   user-select: none;
 }
 

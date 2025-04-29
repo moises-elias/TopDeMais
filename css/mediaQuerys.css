@@ -1,3 +1,34 @@
+@media screen and (max-width: 390px) {
+
+  #contato p,
+  #sobre p,
+  li {
+    font-size: clamp(0.6rem, 2vw, 1rem);
+  }
+
+  h1 {
+    font-size: clamp(1rem, 3.1vw, 1.5rem);
+  }
+
+  h2 {
+    font-size: clamp(0.5rem, 3vw, 1rem);
+  }
+
+  h3 {
+    font-size: clamp(0.5rem, 3vw, 1rem);
+  }
+
+  #local iframe {
+    width: 100%;
+
+    height: 200px;
+  }
+
+
+}
+
+
+
 /* Dispositivos com largura de tela de até 480 pixels */
 @media screen and (max-width: 480px) {
   .nav {
@@ -6,6 +37,35 @@
 
   .menu-button {
     display: flex;
+  }
+
+  p {
+    font-size: 85%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 2%;
+    padding: 2%;
+  }
+
+  footer div+div {
+    border-top: 1px solid whitesmoke;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  footer ul {
+    padding: 2%;
+  }
+
+  footer li {
+    display: flex;
+    gap: 5%;
+    font-size: 85%;
+    list-style: none;
   }
 }
 
