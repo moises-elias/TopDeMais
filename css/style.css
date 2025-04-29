@@ -3,10 +3,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Estilo de fundo com gradiente */
-body {
   background: linear-gradient(to right, #000000, #17212e);
 }
 
@@ -211,12 +207,14 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 /* Estilo de fontes*/
 footer,
 section {
   font-family: "Playfair Display", "Roboto", "Lato", "Montserrat", "Oswald",
     sans-serif;
 }
+
 /* Estilo de seção */
 section {
   margin-bottom: 4%;
@@ -269,6 +267,7 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
 }
+
 .link {
   color: white;
 }
