@@ -1,30 +1,31 @@
-//Cabeçalho interativo
-const header = document.querySelector("header"); //Cabeçalho
-const scrollSizeY = document.documentElement.scrollTop; //Seleciona o Tamanho Vertical do scroll
-let scrollTop = 0;
+const header = document.querySelector("header"); // Seleciona o cabeçalho
 
-window.addEventListener("scroll", function () {
-  scrollTop = window.scrollY; // Localização na tela.
+// Função para verificar se o cabeçalho deve ser escondido
+function shouldHideHeader() {
+  const scrollTop = window.scrollY; // Pega a posição do scroll
+  const scrollSizeY = document.documentElement.scrollHeight; // Tamanho total da página
+  return scrollTop > scrollSizeY * 0.05; // Retorna true se o scroll estiver além de 5% da página
+}
 
-  if (scrollTop > scrollSizeY * 0.05) {
-    //Verifica se está no topo da tela
-    //Se não estiver no topo ele esconde.
-    header.classList.add("headerClose");
+// Função para atualizar a visibilidade do cabeçalho
+function updateHeaderVisibility() {
+  if (shouldHideHeader()) {
+    header.classList.add("headerClose"); // Se o scroll for maior que 5%, esconde o cabeçalho
   } else {
-    //Se Estiver no topo ele deixa mostrando fixamente.
-    header.classList.remove("headerClose");
+    header.classList.remove("headerClose"); // Caso contrário, exibe o cabeçalho
   }
-});
+}
 
-//Mouse Hover do cabeçalho:
+window.addEventListener("scroll", updateHeaderVisibility); // Atualiza a visibilidade toda vez que o scroll mudar
+updateHeaderVisibility(); // Verifica a visibilidade do cabeçalho logo após o carregamento da página
 
+// Mouse Hover do cabeçalho
 header.addEventListener("mouseover", function () {
-  //Mostra o cabeçalho caso passe o mouse por cima.
-  header.classList.remove("headerClose");
+  header.classList.remove("headerClose"); // Mostra o cabeçalho quando o mouse passar por cima
 });
+
 header.addEventListener("mouseout", function () {
-  //Esconde o cabeçalho quando tira o mouse de cima dele.
-  if (scrollTop > scrollSizeY * 0.05) {
-    header.classList.add("headerClose");
+  if (shouldHideHeader()) {
+    header.classList.add("headerClose"); // Esconde o cabeçalho quando o mouse sair, se necessário
   }
 });
