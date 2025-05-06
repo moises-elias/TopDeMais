@@ -106,6 +106,7 @@ header {
 
 /* Estilo da barra lateral */
 .sidebar {
+  visibility: hidden;
   z-index: 10;
   width: 0%;
   display: flex;
