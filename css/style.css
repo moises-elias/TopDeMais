@@ -6,6 +6,10 @@ body {
   background: linear-gradient(to right, #000000, #17212e);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Estilo do cabeçalho */
 header {
   position: sticky;
